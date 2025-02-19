@@ -1,5 +1,3 @@
-*styles/globals.css*
-
 body {
     margin: 0;
     padding: 0;
@@ -40,4 +38,43 @@ a {
 
 .main-content {
     padding: 20px;
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Layout styles */
+.layout-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Blog Layout styles */
+.blog-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-container {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.blog-content {
+  flex: 1;
 }
