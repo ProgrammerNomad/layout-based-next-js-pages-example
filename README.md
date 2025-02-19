@@ -1,0 +1,1 @@
+# layout-based-next-js-pages-example
