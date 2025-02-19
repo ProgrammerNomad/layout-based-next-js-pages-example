@@ -1,27 +1,35 @@
-import MainLayout from '../layouts/MainLayout';
+import Head from 'next/head'
+import Navbar from '../components/Navbar'
 
-const Contact = () => {
-    return (
-        <MainLayout>
-            <h1>Contact Us</h1>
-            <p>If you have any questions, feel free to reach out!</p>
-            <form>
-                <div>
-                    <label htmlFor="name">Name:</label>
-                    <input type="text" id="name" name="name" required />
-                </div>
-                <div>
-                    <label htmlFor="email">Email:</label>
-                    <input type="email" id="email" name="email" required />
-                </div>
-                <div>
-                    <label htmlFor="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <button type="submit">Send</button>
-            </form>
-        </MainLayout>
-    );
-};
-
-export default Contact;
+export default function Contact() {
+  return (
+    <div>
+      <Head>
+        <title>Contact Us</title>
+      </Head>
+      <Navbar />
+      <main className="container py-4">
+        <div className="row">
+          <div className="col-md-6 mx-auto">
+            <h1 className="mb-4">Contact Us</h1>
+            <div className="card">
+              <div className="card-body">
+                <form>
+                  <div className="mb-3">
+                    <label htmlFor="email" className="form-label">Email address</label>
+                    <input type="email" className="form-control" id="email" />
+                  </div>
+                  <div className="mb-3">
+                    <label htmlFor="message" className="form-label">Message</label>
+                    <textarea className="form-control" id="message" rows="3"></textarea>
+                  </div>
+                  <button type="submit" className="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  )
+}
