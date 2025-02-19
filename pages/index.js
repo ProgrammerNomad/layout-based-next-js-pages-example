@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import BaseLayout from '../components/layouts/BaseLayout';
+import MarketingLayout from '../components/layouts/MarketingLayout';
 
 export default function Home() {
   return (
@@ -54,5 +55,5 @@ export default function Home() {
 }
 
 Home.getLayout = function getLayout(page) {
-  return <BaseLayout>{page}</BaseLayout>;
+  return <MarketingLayout>{page}</MarketingLayout>;
 };

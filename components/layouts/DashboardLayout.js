@@ -7,10 +7,10 @@ const DashboardLayout = ({ children }) => {
       <Header />
       <div className="container-fluid flex-grow-1">
         <div className="row">
-          <div className="col-md-3 col-lg-2 bg-light p-3 border-end">
+          <div className="col-md-3 col-lg-2 bg-light border-end p-3">
             <Sidebar />
           </div>
-          <main className="col-md-9 col-lg-10 px-4 py-3">
+          <main className="col-md-9 col-lg-10 px-md-4 py-4">
             {children}
           </main>
         </div>

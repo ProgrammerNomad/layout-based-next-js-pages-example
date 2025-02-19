@@ -1,7 +1,8 @@
 import Head from 'next/head';
 import Navbar from '../components/Navbar';
+import BaseLayout from '../components/layouts/BaseLayout';
 
-export default function About() {
+function AboutPage() {
   return (
     <>
       <Head>
@@ -40,3 +41,9 @@ export default function About() {
     </>
   );
 }
+
+AboutPage.getLayout = function getLayout(page) {
+  return <BaseLayout>{page}</BaseLayout>;
+};
+
+export default AboutPage;
