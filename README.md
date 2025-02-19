@@ -1,34 +1,63 @@
 # my-nextjs-app/README.md
 
-# My Next.js App
+# Next.js Multi-Layout Example
 
-This is a Next.js application built using JavaScript. The project demonstrates different layouts and page structures.
+This project demonstrates how to implement multiple layouts in a Next.js application using Bootstrap for styling. It showcases different layout patterns and page structures commonly used in web applications.
+
+## Features
+
+- Multiple layout implementations
+- Bootstrap integration
+- Responsive design
+- Different page templates
+- Dynamic navigation
+- Modular component structure
+
+## Layouts Available
+
+1. **Base Layout**
+   - Standard layout with header and footer
+   - Used for general content pages
+   - Full-width container structure
+
+2. **Marketing Layout**
+   - Hero section with promotional content
+   - Feature showcase sections
+   - Call-to-action components
+
+3. **Dashboard Layout**
+   - Sidebar navigation
+   - Admin/user dashboard structure
+   - Responsive grid system
+
+4. **Landing Layout**
+   - Full-screen hero section
+   - Centered content
+   - Minimal navigation
 
 ## Project Structure
 
-- **pages/**: Contains the application's pages.
-  - `index.js`: Main entry point for the application.
-  - `about.js`: About page providing information about the application.
-  - `contact.js`: Contact page for user inquiries.
-  - `_app.js`: Custom App component for layout integration.
-
-- **layouts/**: Contains layout components.
-  - `MainLayout.js`: Main layout structure with header and footer.
-  - `BlogLayout.js`: Layout for blog-related pages.
-  - `DashboardLayout.js`: Layout for user-specific dashboard pages.
-
-- **components/**: Contains reusable components.
-  - `Header.js`: Header component used in various layouts.
-  - `Footer.js`: Footer component used in various layouts.
-  - `Sidebar.js`: Sidebar component for additional navigation.
-  - `Navigation.js`: Component for handling links between pages.
-
-- **styles/**: Contains global styles.
-  - `globals.css`: Global CSS styles applied throughout the application.
-
-- **package.json**: Configuration file for npm, listing dependencies and scripts.
-
-- **next.config.js**: Configuration settings for the Next.js application.
+```text
+layout-based-next-js-pages-example/
+├── components/
+│   ├── layouts/
+│   │   ├── BaseLayout.js
+│   │   ├── DashboardLayout.js
+│   │   ├── MarketingLayout.js
+│   │   └── LandingLayout.js
+│   ├── Header.js
+│   ├── Footer.js
+│   ├── Navbar.js
+│   └── Sidebar.js
+├── pages/
+│   ├── _app.js
+│   ├── index.js
+│   ├── about.js
+│   ├── contact.js
+│   ├── landing.js
+│   └── dashboard.js
+└── styles/
+    └── globals.css
 
 ## Getting Started
 
