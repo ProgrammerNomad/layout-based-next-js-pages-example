@@ -3,9 +3,9 @@ import Navbar from '../components/Navbar'
 import BaseLayout from '../components/layouts/BaseLayout';
 import MarketingLayout from '../components/layouts/MarketingLayout';
 
-export default function Home() {
+const Home = () => {
   return (
-    <div>
+    <BaseLayout>
       <Head>
         <title>Home Page</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -50,10 +50,8 @@ export default function Home() {
           </div>
         </div>
       </main>
-    </div>
+    </BaseLayout>
   )
 }
 
-Home.getLayout = function getLayout(page) {
-  return <MarketingLayout>{page}</MarketingLayout>;
-};
+export default Home
